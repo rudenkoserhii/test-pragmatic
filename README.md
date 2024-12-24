@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Test Task: Wallet App
 
-## Getting Started
+This project implements a mobile wallet application with React.js (Next.js) and TypeScript, focusing on displaying transaction lists and individual transaction details.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Frameworks**: React.js (Next.js), TypeScript
+- **UI Library**: Tailwind CSS
+- **Icons**: FontAwesome
+- **Data**: JSON mock data for transactions and user details
+
+### Features
+
+- **TransactionsList**: 
+  - Displays a list of recent transactions
+  - Shows card balance, daily points, and payment status
+  - Each transaction includes:
+    - Type (Payment or Credit)
+    - Amount
+    - Name of the transaction (e.g., IKEA)
+    - Description
+    - Date (day name for last week or full date for older transactions)
+    - Pending status
+    - Authorized user name if applicable
+    - Icon from FontAwesome
+
+- **TransactionDetail**: 
+  - Detailed view of a selected transaction from the list
+
+#### Structure
+
+```plaintext
+test-pragmatic/
+├── public/
+│   ├── data/
+│   │   └── mock.json
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── CardBalanceBlock.tsx
+│   │   ├── DailyPointsBlock.tsx
+│   │   ├── LatestTransactionsBlock.tsx
+│   │   ├── PaymentDueBlock.tsx
+│   │   └── TransactionDetail.tsx
+│   ├── constants/
+│   │   ├── index.ts
+│   │   └── monthes.ts
+│   ├── enums/
+│   │   ├── api-routes.enum.ts
+│   │   └── index.ts
+│   ├── helpers/
+│   │   ├── getIcon.ts
+│   │   ├── index.ts
+│   │   └── shuffleArray.ts
+│   ├── pages/
+│   │   ├── transaction/
+│   │   │   └── [id].tsx
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   ├── index.tsx
+│   │   └── transactions.tsx
+│   ├── styles/
+│   │   └── globals.css
+│   ├── types/
+│   │   ├── balance.type.ts
+│   │   ├── due.type.ts
+│   │   ├── index.ts
+│   │   ├── points.type.ts
+│   │   └── transaction.type.ts
+│   └── utils/
+│       ├── calculatePoints.ts
+│       ├── formatDate.ts
+│       ├── formatPoints.ts
+│       └── index.ts
+├── .gitignore
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── README.md
+├── tailwind.config.ts
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##### Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Install Dependencies:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Run the Development Server:
+```bash
+npm run dev
+```
 
-## Learn More
+- Build for Production:
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Start Production Server:
+```bash
+npm start
+```

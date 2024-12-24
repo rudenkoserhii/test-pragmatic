@@ -9,4 +9,7 @@ export interface Transaction {
     pending: boolean;
     authorizedUser?: string;
     icon: string;
+    status?: string;
+    bank: string;
+    card: string;
   }

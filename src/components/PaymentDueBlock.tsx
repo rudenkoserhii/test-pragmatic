@@ -12,9 +12,9 @@ const PaymentDueBlock = ({ paymentDue }: { paymentDue: Due }): JSX.Element => {
       <div className='flex flex-col'>
 
         <h3>{`${amount ? '' : 'No '}Payment Due`}</h3>
-        <p className='text-[--background]'>{amount
+        <p className='text-[--text-secondary]'>{amount
           ? `Your ${MONTH_NAMES[month - 1]} Payment due balance is ${amount}`
-          : `You\'ve paid your ${MONTH_NAMES[month - 1]} balance`}</p>
+          : `You\'ve paid your ${MONTH_NAMES[month]} balance`}</p>
       </div>
       <FontAwesomeIcon icon={amount
         ? faCircleExclamation

@@ -36,7 +36,8 @@ a {
 /* End Normalize */
 
 :root {
-  --background: #d3d3d3;
+  --background: #f3f3f3;
+  --text-secondary: #d3d3d3;
   --foreground: #171717;
 }
 

@@ -21,14 +21,14 @@ const Home: React.FC = () => {
   }, [router]);
   
   if (isRedirecting) {
-    return <div>Redirecting...</div>;
+    return <h1 className='text-2xl text-center mb-5'>Redirecting...</h1>;
   }
 
   return (
     <div>
-      <h1>Welcome to My Wallet App</h1>
-      <p>You will be redirected to the transactions page shortly...</p>
-      <p>Or click <Link href="/transactions">here</Link> to go now.</p>
+      <h1 className='text-2xl text-center mb-5'>Welcome to My Wallet App</h1>
+      <p className='text-sm text-center text-[--text-secondary]'>You will be redirected to the transactions page shortly...</p>
+      <p className='text-sm text-center text-[--text-secondary]'>Or click <Link href="/transactions">here</Link> to go now.</p>
     </div>
   );
 };

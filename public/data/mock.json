@@ -9,7 +9,8 @@
       "date": "2024-12-17 14:23:00",
       "pending": false,
       "icon": "apple",
-      "bank": "Chase Bank"
+      "bank": "Chase Bank",
+      "card": "debit"
     },
     {
       "id": "02",
@@ -23,7 +24,8 @@
       "authorizedUser": "Serhii",
       "icon": "airbnb",
       "status": "approved",
-      "bank": "Bank of America"
+      "bank": "Bank of America",
+      "card": "credit"
     },
     {
       "id": "03",
@@ -34,7 +36,8 @@
       "date": "2024-12-14 09:15:00",
       "pending": false,
       "icon": "paypal",
-      "bank": "Wells Fargo"
+      "bank": "Wells Fargo",
+      "card": "debit"
     },
     {
       "id": "04",
@@ -45,7 +48,8 @@
       "date": "2024-12-16 16:30:00",
       "pending": false,
       "icon": "google",
-      "bank": "Citibank"
+      "bank": "Citibank",
+      "card": "debit"
     },
     {
       "id": "05",
@@ -59,7 +63,8 @@
       "authorizedUser": "Serhii",
       "icon": "amazon",
       "status": "declined",
-      "bank": "US Bank"
+      "bank": "US Bank",
+      "card": "credit"
     },
     {
       "id": "06",
@@ -72,7 +77,8 @@
       "pending": true,
       "icon": "spotify",
       "status": "approved",
-      "bank": "PNC Bank"
+      "bank": "PNC Bank",
+      "card": "credit"
     },
     {
       "id": "07",
@@ -86,7 +92,8 @@
       "authorizedUser": "Serhii",
       "icon": "youtube",
       "status": "approved",
-      "bank": "TD Bank"
+      "bank": "TD Bank",
+      "card": "credit"
     },
     {
       "id": "08",
@@ -97,7 +104,8 @@
       "date": "2024-12-13 08:00:00",
       "pending": false,
       "icon": "vimeo",
-      "bank": "Capital One"
+      "bank": "Capital One",
+      "card": "debit"
     },
     {
       "id": "09",
@@ -110,7 +118,8 @@
       "pending": false,
       "icon": "uber",
       "status": "declined",
-      "bank": "Morgan Stanley"
+      "bank": "Morgan Stanley",
+      "card": "credit"
     },
     {
       "id": "10",
@@ -121,7 +130,8 @@
       "date": "2024-12-15 17:00:00",
       "pending": false,
       "icon": "atlassian",
-      "bank": "Goldman Sachs"
+      "bank": "Goldman Sachs",
+      "card": "debit"
     },
     {
       "id": "11",
@@ -135,7 +145,8 @@
       "authorizedUser": "Serhii",
       "icon": "waze",
       "status": "approved",
-      "bank": "Deutsche Bank"
+      "bank": "Deutsche Bank",
+      "card": "credit"
     },
     {
       "id": "12",
@@ -146,7 +157,8 @@
       "date": "2024-12-05 07:00:00",
       "pending": false,
       "icon": "medium",
-      "bank": "Barclays"
+      "bank": "Barclays",
+      "card": "debit"
     },
     {
       "id": "13",
@@ -159,7 +171,8 @@
       "pending": false,
       "icon": "shopify",
       "status": "approved",
-      "bank": "HSBC"
+      "bank": "HSBC",
+      "card": "credit"
     },
     {
       "id": "14",
@@ -173,7 +186,8 @@
       "authorizedUser": "Serhii",
       "icon": "ups",
       "status": "declined",
-      "bank": "Santander"
+      "bank": "Santander",
+      "card": "credit"
     },
     {
       "id": "15",
@@ -184,7 +198,8 @@
       "date": "2024-12-21 09:45:00",
       "pending": false,
       "icon": "dropbox",
-      "bank": "Credit Suisse"
+      "bank": "Credit Suisse",
+      "card": "debit"
     },
     {
       "id": "16",
@@ -197,7 +212,8 @@
       "pending": false,
       "icon": "pinterest",
       "status": "approved",
-      "bank": "BNP Paribas"
+      "bank": "BNP Paribas",
+      "card": "credit"
     },
     {
       "id": "17",
@@ -211,7 +227,8 @@
       "authorizedUser": "Serhii",
       "icon": "cc-visa",
       "status": "declined",
-      "bank": "Lloyds Banking Group"
+      "bank": "Lloyds Banking Group",
+      "card": "credit"
     },
     {
       "id": "18",
@@ -222,7 +239,8 @@
       "date": "2024-12-20 15:10:00",
       "pending": false,
       "icon": "playstation",
-      "bank": "RBS"
+      "bank": "RBS",
+      "card": "debit"
     },
     {
       "id": "19",
@@ -236,7 +254,8 @@
       "authorizedUser": "Serhii",
       "icon": "xbox",
       "status": "approved",
-      "bank": "Banco Santander"
+      "bank": "Banco Santander",
+      "card": "credit"
     },
     {
       "id": "20",
@@ -249,7 +268,8 @@
       "pending": false,
       "icon": "upwork",
       "status": "approved",
-      "bank": "ING Group"
+      "bank": "ING Group",
+      "card": "credit"
     }
   ],
   "cardBalance": {
