@@ -1,4 +1,25 @@
-import { faApple, faAirbnb, faPaypal, faGoogle, faAmazon, faSpotify, faYoutube, faVimeo, faUber, faAtlassian, faWaze, faMedium, faShopify, faUps, faDropbox, faPinterest, faCcVisa, faPlaystation, faXbox, faUpwork } from '@fortawesome/free-brands-svg-icons';
+import {
+    faApple,
+    faAirbnb,
+    faPaypal,
+    faGoogle,
+    faAmazon,
+    faSpotify,
+    faYoutube,
+    faVimeo,
+    faUber,
+    faAtlassian,
+    faWaze,
+    faMedium,
+    faShopify,
+    faUps,
+    faDropbox,
+    faPinterest,
+    faCcVisa,
+    faPlaystation,
+    faXbox,
+    faUpwork,
+} from '@fortawesome/free-brands-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
@@ -26,10 +47,4 @@ const iconMap: { [key: string]: FontAwesomeIconProps['icon'] } = {
     upwork: faUpwork,
 };
 
-export const getIcon = (icon: string) => {
-    // Convert name to lowercase for case-insensitive matching
-    const lowerCaseName = icon.toLowerCase();
-    // Return the icon from the map or default to faShoppingCart
-    console.log(iconMap[lowerCaseName])
-    return iconMap[lowerCaseName] || faShoppingCart;
-};
+export const getIcon = (icon: string) => iconMap[icon.toLowerCase()] || faShoppingCart;

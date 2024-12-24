@@ -1,21 +1,15 @@
-// src/components/TransactionDetail.tsx
-
-import React from 'react';
-import { Transaction } from '../types/transaction.type.ts';
+import React, { JSX } from 'react';
+import { Transaction } from '@/types';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-interface TransactionDetailProps {
-  transaction: Transaction;
-}
-
-const TransactionDetail: React.FC<TransactionDetailProps> = ({ transaction }) => {
+const TransactionDetail = ({ transaction }: { transaction: Transaction }): JSX.Element => {
   const router = useRouter();
 
   return (
-    <div style={{ padding: '20px' }}>
-      <button onClick={() => router.back()} style={{ marginBottom: '20px' }}>
+    <div className='p-5'>
+      <button onClick={() => router.back()} className='mb-5'>
         <FontAwesomeIcon icon={faArrowLeft} /> Back
       </button>
       <h1>Transaction Details</h1>

@@ -3,14 +3,13 @@
     {
       "id": "01",
       "type": "Payment",
-      "tax": 2,
       "amount": "+$174.00",
       "name": "Apple Inc.",
       "description": "Technology company known for iPhone, iPad, Mac, and Apple Watch",
-      "date": "2024-12-17 00:00:00",
+      "date": "2024-12-17 14:23:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "apple"
+      "icon": "apple",
+      "bank": "Chase Bank"
     },
     {
       "id": "02",
@@ -19,82 +18,86 @@
       "amount": "-3.24",
       "name": "Airbnb",
       "description": "Online marketplace for lodging, primarily homestays for vacation rentals, and tourism activities",
-      "date": "2024-12-17 00:00:00",
+      "date": "2024-12-17 12:45:00",
       "pending": false,
       "authorizedUser": "Serhii",
-      "icon": "airbnb"
+      "icon": "airbnb",
+      "status": "approved",
+      "bank": "Bank of America"
     },
     {
       "id": "03",
       "type": "Payment",
-      "tax": 2,
       "amount": "+$99.71",
       "name": "PayPal",
       "description": "Online payments system that supports online money transfers and serves as an electronic alternative to traditional paper methods like checks and money orders",
-      "date": "2024-12-14 00:00:00",
+      "date": "2024-12-14 09:15:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "paypal"
+      "icon": "paypal",
+      "bank": "Wells Fargo"
     },
     {
       "id": "04",
       "type": "Payment",
-      "tax": 2,
       "amount": "+$73.58",
       "name": "Google LLC",
       "description": "Multinational technology company specializing in Internet-related services and products, including online advertising technologies, search, cloud computing, software, and hardware",
-      "date": "2024-12-16 00:00:00",
+      "date": "2024-12-16 16:30:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "google"
+      "icon": "google",
+      "bank": "Citibank"
     },
     {
       "id": "05",
       "type": "Credit",
-      "tax": 2,
+      "tax": 3,
       "amount": "-21.61",
       "name": "Amazon.com, Inc.",
       "description": "Multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence",
-      "date": "2022-10-01 00:00:00",
+      "date": "2022-10-01 10:00:00",
       "pending": false,
       "authorizedUser": "Serhii",
-      "icon": "amazon"
+      "icon": "amazon",
+      "status": "declined",
+      "bank": "US Bank"
     },
     {
       "id": "06",
       "type": "Credit",
-      "tax": 2,
+      "tax": 4,
       "amount": "-14.06",
       "name": "Spotify",
       "description": "Digital music service that gives you access to millions of songs",
-      "date": "2024-12-19 00:00:00",
+      "date": "2024-12-19 18:50:00",
       "pending": true,
-      "authorizedUser": "Serhii",
-      "icon": "spotify"
+      "icon": "spotify",
+      "status": "approved",
+      "bank": "PNC Bank"
     },
     {
       "id": "07",
       "type": "Credit",
-      "tax": 2,
+      "tax": 1,
       "amount": "-7.50",
       "name": "YouTube, LLC",
       "description": "Video-sharing platform where users can watch, like, share, comment, and upload their own videos",
-      "date": "2022-05-26 00:00:00",
+      "date": "2024-12-23 20:10:00",
       "pending": false,
       "authorizedUser": "Serhii",
-      "icon": "youtube"
+      "icon": "youtube",
+      "status": "approved",
+      "bank": "TD Bank"
     },
     {
       "id": "08",
       "type": "Payment",
-      "tax": 2,
       "amount": "+$50.00",
       "name": "Vimeo, Inc.",
       "description": "Video hosting, sharing, and services platform focused on high-definition video quality",
-      "date": "2024-12-13 00:00:00",
+      "date": "2024-12-13 08:00:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "vimeo"
+      "icon": "vimeo",
+      "bank": "Capital One"
     },
     {
       "id": "09",
@@ -103,58 +106,60 @@
       "amount": "-15.99",
       "name": "Uber Technologies, Inc.",
       "description": "Ride-sharing and transportation network company offering taxi, food delivery, and other services",
-      "date": "2024-12-13 00:00:00",
+      "date": "2024-12-13 22:45:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "uber"
+      "icon": "uber",
+      "status": "declined",
+      "bank": "Morgan Stanley"
     },
     {
       "id": "10",
       "type": "Payment",
-      "tax": 2,
       "amount": "+$200.00",
       "name": "Atlassian",
       "description": "Software company that develops products for software developers, project managers, and content management",
-      "date": "2022-09-15 00:00:00",
+      "date": "2024-12-15 17:00:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "atlassian"
+      "icon": "atlassian",
+      "bank": "Goldman Sachs"
     },
     {
       "id": "11",
       "type": "Credit",
-      "tax": 2,
+      "tax": 5,
       "amount": "-45.23",
       "name": "Waze Mobile",
       "description": "GPS navigation software that provides turn-by-turn information and user-submitted travel times and route details",
-      "date": "2022-09-10 00:00:00",
+      "date": "2024-12-10 11:30:00",
       "pending": false,
       "authorizedUser": "Serhii",
-      "icon": "waze"
+      "icon": "waze",
+      "status": "approved",
+      "bank": "Deutsche Bank"
     },
     {
       "id": "12",
       "type": "Payment",
-      "tax": 2,
       "amount": "+$100.00",
       "name": "Medium Corporation",
       "description": "Online publishing platform where users can post articles, stories, and essays for a community of readers",
-      "date": "2022-09-05 00:00:00",
+      "date": "2024-12-05 07:00:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "medium"
+      "icon": "medium",
+      "bank": "Barclays"
     },
     {
       "id": "13",
       "type": "Credit",
-      "tax": 2,
+      "tax": 3,
       "amount": "-12.50",
       "name": "Shopify Inc.",
       "description": "E-commerce platform for online stores and retail point-of-sale systems",
-      "date": "2022-09-01 00:00:00",
+      "date": "2024-12-01 14:15:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "shopify"
+      "icon": "shopify",
+      "status": "approved",
+      "bank": "HSBC"
     },
     {
       "id": "14",
@@ -163,22 +168,23 @@
       "amount": "-89.99",
       "name": "United Parcel Service (UPS)",
       "description": "Package delivery and supply chain management company",
-      "date": "2022-08-28 00:00:00",
+      "date": "2024-12-22 16:00:00",
       "pending": false,
       "authorizedUser": "Serhii",
-      "icon": "ups"
+      "icon": "ups",
+      "status": "declined",
+      "bank": "Santander"
     },
     {
       "id": "15",
       "type": "Payment",
-      "tax": 2,
       "amount": "+$30.00",
       "name": "Dropbox, Inc.",
       "description": "File hosting service that offers cloud storage, file synchronization, personal cloud, and client software",
-      "date": "2022-08-25 00:00:00",
+      "date": "2024-12-21 09:45:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "dropbox"
+      "icon": "dropbox",
+      "bank": "Credit Suisse"
     },
     {
       "id": "16",
@@ -187,67 +193,71 @@
       "amount": "-30.00",
       "name": "Pinterest, Inc.",
       "description": "Image sharing and social media service designed to enable saving and discovery of information on the web using images, animated GIFs, and videos",
-      "date": "2024-12-13 00:00:00",
+      "date": "2024-12-13 13:20:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "pinterest"
+      "icon": "pinterest",
+      "status": "approved",
+      "bank": "BNP Paribas"
     },
     {
       "id": "17",
       "type": "Credit",
-      "tax": 2,
+      "tax": 4,
       "amount": "-50.00",
       "name": "Visa Inc.",
       "description": "Global payments technology company working to enable consumers, businesses, banks, and governments to use digital currency",
-      "date": "2024-12-13 00:00:00",
+      "date": "2024-12-13 17:30:00",
       "pending": false,
       "authorizedUser": "Serhii",
-      "icon": "cc-visa"
+      "icon": "cc-visa",
+      "status": "declined",
+      "bank": "Lloyds Banking Group"
     },
     {
       "id": "18",
       "type": "Payment",
-      "tax": 2,
       "amount": "+$75.00",
       "name": "Sony Interactive Entertainment",
       "description": "Video game and digital entertainment company, known for the PlayStation brand of gaming consoles",
-      "date": "2022-08-20 00:00:00",
+      "date": "2024-12-20 15:10:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "playstation"
+      "icon": "playstation",
+      "bank": "RBS"
     },
     {
       "id": "19",
       "type": "Credit",
-      "tax": 2,
+      "tax": 6,
       "amount": "-25.00",
       "name": "Microsoft Corporation",
       "description": "Technology corporation known for its software products like Windows OS, Office Suite, and the Xbox gaming console",
-      "date": "2022-08-18 00:00:00",
+      "date": "2024-12-18 19:00:00",
       "pending": false,
       "authorizedUser": "Serhii",
-      "icon": "xbox"
+      "icon": "xbox",
+      "status": "approved",
+      "bank": "Banco Santander"
     },
     {
       "id": "20",
       "type": "Credit",
-      "tax": 2,
+      "tax": 3,
       "amount": "-73.58",
       "name": "Upwork Inc.",
       "description": "Global freelancing platform where businesses and independent professionals connect and collaborate remotely",
-      "date": "2022-09-29 00:00:00",
+      "date": "2024-12-19 11:00:00",
       "pending": false,
-      "authorizedUser": "Serhii",
-      "icon": "upwork"
+      "icon": "upwork",
+      "status": "approved",
+      "bank": "ING Group"
     }
   ],
   "cardBalance": {
     "limit": 1500,
     "balance": 17.30
   },
-  "dailyPoints": 456000,
   "paymentDue": {
     "amount": 0,
-    "month": 9
+    "month": 11
   }
 }

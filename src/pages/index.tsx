@@ -1,20 +1,21 @@
-// src/pages/index.tsx
-
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { API_ROUTES } from '@/enums';
+
+const TIMEOUT = 2000;
 
 const Home: React.FC = () => {
   const router = useRouter();
   
 
-  const [isRedirecting, setIsRedirecting] = useState(false);
+  const [isRedirecting, setIsRedirecting] = useState<boolean>(false);
 
   useEffect(() => {
     const redirectTimer = setTimeout(() => {
       setIsRedirecting(true);
-      router.push('/transactions');
-    }, 2000);
+      router.push(API_ROUTES.TRANSACTIONS);
+    }, TIMEOUT);
   
     return () => clearTimeout(redirectTimer);
   }, [router]);

@@ -1,11 +1,7 @@
+import { CardBalance } from '@/types';
 import React from 'react';
 
-interface CardBalanceProps {
-  limit: number;
-  balance: number;
-}
-
-const CardBalanceBlock: React.FC<CardBalanceProps> = ({ limit, balance }) => {
+const CardBalanceBlock: React.FC<CardBalance> = ({ limit, balance }) => {
   return (
     <div className='bg-white rounded-lg p-4 mb-4 w-full h-1/2'>
       <h3 >Card Balance</h3>

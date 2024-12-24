@@ -1,41 +1,37 @@
-// src/pages/transactions.tsx
-
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, JSX } from 'react';
 import CardBalanceBlock from '@/components/CardBalanceBlock';
-import PaymentDueBlock from '../components/PaymentDueBlock';
-import DailyPointsBlock from '../components/DailyPointsBlock';
-import LatestTransactionsBlock from '../components/LatestTransactionsBlock';
-import { Transaction } from '../types/transaction.type.ts';
+import PaymentDueBlock from '@/components/PaymentDueBlock';
+import DailyPointsBlock from '@/components/DailyPointsBlock';
+import LatestTransactionsBlock from '@/components/LatestTransactionsBlock';
+import { CardBalance, Transaction } from '@/types';
 import mockData from '../../public/data/mock.json';
-import { calculatePoints } from '../utils/calculatePoints';
-// import formatDate from '../utils/formatDate';
+import { calculatePoints } from '@/utils';
 import { shuffleArray } from '@/helpers';
 import { Due } from '@/types';
 
 const DEFAULT_LIMIT = 1500;
 const DEFAULT_BALANCE = 0;
+const DEFAULT_VALUE_NUMBER = 0;
+const FIRST_ELEMENT = 0;
+const LIMIT = 10;
 
-const Transactions: React.FC = () => {
+const Transactions = (): JSX.Element => {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
-  const [cardBalance, setCardBalance] = useState({ limit: DEFAULT_LIMIT, balance: DEFAULT_BALANCE });
-  const [dailyPoints, setDailyPoints] = useState<number>(0);
-  const [paymentDue, setPaymentDue] = useState<Due>({ amount: 0, month: 0 });
+  const [cardBalance, setCardBalance] = useState<CardBalance>({ limit: DEFAULT_LIMIT, balance: DEFAULT_BALANCE });
+  const [dailyPoints, setDailyPoints] = useState<number>(DEFAULT_VALUE_NUMBER);
+  const [paymentDue, setPaymentDue] = useState<Due>({ amount: DEFAULT_VALUE_NUMBER, month: DEFAULT_VALUE_NUMBER });
 
   useEffect(() => {
-    // Load mock data
-    const { transactions, cardBalance, dailyPoints, paymentDue } = mockData;
+    const { transactions, cardBalance, paymentDue } = mockData;
 
-    // Set transactions
-    setTransactions(shuffleArray(transactions).slice(0, 10)); // Show only the latest 10 transactions
+    setTransactions(shuffleArray(transactions).slice(FIRST_ELEMENT, LIMIT));
 
-    // Set card balance
     setCardBalance({
       limit: cardBalance.limit,
       balance: cardBalance.balance,
     });
 
-    // Set daily points (assuming the mockData includes today's points)
-    setDailyPoints(dailyPoints);
+    setDailyPoints(calculatePoints());
 
     setPaymentDue(paymentDue);
   }, []);
